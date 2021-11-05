@@ -125,6 +125,14 @@ body{
     background-color: var(--color-4);
 }
 
-h1{
+h1, h3{
     font-family: var(--titulos);
+}
+
+.pagina{
+    margin-right: 3rem;
+}
+
+a{
+    color: var(--color-texto);
 }

@@ -10,11 +10,8 @@
 </head>
 <body>
     <div class="main">
-        <div class="chat">
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="chat" id="chat">
+        <!--
             <div class="mensaje-recibido">
                 <img class="avatar" src="assets/avatar1.jpg">
                 <div class="contenido-recibido">
@@ -47,28 +44,11 @@
                 </div>
                 <img class="avatar" src="assets/avatar2.jpg">
             </div>
-            <div class="mensaje-recibido">
-                <img class="avatar" src="assets/avatar1.jpg">
-                <div class="contenido-recibido">
-                    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ad, commodi animi cupiditate corrupti laboriosam nam distinctio itaque corporis veritatis magnam dolorum recusandae voluptates, incidunt dolor ratione nobis illo nulla!
-
-                </div>
-                <img class="candado" src="assets/candado.png" onclick="descifrar(this.parentNode)">
+        -->
+            <div class="enviar">
+                <input id="input" placeholder="Envía un mensaje" type="text">
+                <input type="button" onclick="send()">
             </div>
-            <div class="mensaje-enviado">
-                <img class="candado" src="assets/candado.png" onclick="descifrar(this.parentNode)">
-                <div class="contenido-enviado">
-                    
-                    placeholder
-
-                </div>
-                <img class="avatar" src="assets/avatar2.jpg">
-            </div>
-            <form class="enviar">
-                <input placeholder="Envía un mensaje" type="text">
-                <input type="button">
-            </form>
         </div>
         <div class="pagina">
             <br>
@@ -89,9 +69,6 @@
                 Descifrado:
             </h3>
             <p id="salida">
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam vel, eius similique veritatis id. Reiciendis veniam et nisi voluptatum totam laboriosam voluptates aliquam libero reprehenderit? Quisquam reiciendis nesciunt quas?
-            
             </p>
             <h3>
                 Elaborado por:
@@ -107,6 +84,8 @@
             </a>
         </div>
     </div>
+    <script src="socket.io/socket.io.js"></script>
     <script src="script.js"></script>
+    <script src="chat.js"></script>
 </body>
 </html>

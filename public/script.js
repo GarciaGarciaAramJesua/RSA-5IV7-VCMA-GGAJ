@@ -12,19 +12,3 @@ function descifrar(element) {
     }
     salida.innerHTML = textoCifrado;
 }
-
-/*
-    console.log(element.previousSibling.outerText);
-    console.log(element);
-    console.log(element.parentNode.classList.value);
-    if(element.parentNode.classList.value == "mensaje-recibido"){
-        alert(element.previousSibling.outerText);
-    }
-    if(element.parentNode.classList.value == "mensaje-recibido"){
-        alert(element.previousSibling.outerText);
-    }
-
-
-
-    console.log(element.getElementsByClassName("contenido-recibido")[0].outerText);
-*/

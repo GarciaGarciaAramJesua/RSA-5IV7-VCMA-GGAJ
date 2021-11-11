@@ -95,11 +95,13 @@ function cifrar(mensaje, e, n) {
         var x = modPow(caf, e, n);
         respuesta += x.toString();
     }
+    /*
     console.log(respuesta);
     console.log(p)
     console.log(q)
     console.log(n)
     console.log(fi)
+    */
     return respuesta;
 }
 
